@@ -7,7 +7,7 @@ import React,{useState,useEffect} from 'react'
 function App() {
   
   if(!localStorage.text)localStorage.text=''
-  if(localStorage.stamps==undefined)localStorage.stamps=[]
+  if(localStorage.stamps==undefined)localStorage.stamps='[]'
   // if(!localStorage.blacklist)localStorage.blacklist=[]
   const [text,setText] = useState(localStorage.text)
   const [word,setWord] = useState(0)
